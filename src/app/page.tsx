@@ -21,3 +21,6 @@ function NavBar() {
     </nav>
   );
 }
+
+// add framer motion
+// build each section mobile first then desktop consecutively
