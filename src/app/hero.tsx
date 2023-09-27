@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import { FaLinkedin, FaGithubAlt } from "react-icons/fa6";
-import { FaWhatsappSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
 import circle from "../../public/circle.svg";
 import smallCircle from "../../public/smallCircle.svg";
 import navBgImg from "../../public/bgWhite.png";
@@ -46,36 +46,44 @@ export default function Hero() {
         <Image alt="" src={smallCircle} />
       </div>
 
-      <div className="hidden md:flex justify-center items-center absolute top-[16rem] left-[68%] bg-white shadow-xl rounded-full w-[6.2rem] aspect-square">
+      <div className="md:flex justify-center items-center md:absolute md:top-[16rem] md:left-[68%] bg-white shadow-xl rounded-full w-[6.2rem] aspect-square">
         <Image src={typescript} alt="" className="p-2" />
       </div>
-      <div className="hidden md:flex justify-center items-center absolute top-[30rem] left-[75%] bg-white shadow-xl rounded-full w-[8.2rem] aspect-square">
+      <div className="md:flex justify-center items-center md:absolute md:top-[30rem] md:left-[75%] bg-white shadow-xl rounded-full w-[8.2rem] aspect-square">
         <Image src={react} alt="" className="w-full p-4" />
       </div>
-      <div className="hidden md:flex justify-center items-center absolute top-[44rem] left-[68%] bg-white shadow-xl rounded-full w-[5.5rem] aspect-square">
+      <div className="md:flex justify-center items-center md:absolute md:top-[44rem] md:left-[68%] bg-white shadow-xl rounded-full w-[5.5rem] aspect-square">
         <Image src={tailwind} alt="" className="p-2" />
       </div>
-      <div className="flex flex-col gap-2 absolute bottom-4 left-4">
+      <div className="hidden md:flex flex-col gap-2 absolute bottom-4 left-4">
         <div className="bg-white flex justify-center items-center rounded-full w-10 aspect-square">
-          <a href="">
-            <FaLinkedin className=" w-full h-full p-2 fill-slate-500" />
+          <a href="" className="text-gray-500">
+            <FaLinkedin className=" w-full h-full p-2" />
           </a>{" "}
         </div>
 
         <div className="bg-white flex justify-center items-center rounded-full w-10 aspect-square">
-          <a href="">
+          <a href="" className="text-gray-500">
             {" "}
-            <FaGithubAlt clasName="w-full h-full p-2 fill-slate-500" />
-            {/* <FaLinkedin className="w-full h-full p-2 fill-slate-500" /> */}
+            <FaGithub clasName="w-full h-full p-2" />
           </a>
         </div>
 
         <div className="bg-white flex justify-center items-center rounded-full w-10 aspect-square">
-          <a href="">
+          <a href="" className="text-gray-500">
             {" "}
-            <FaWhatsappSquare clasName="w-full h-full p-2 fill-slate-500" />
+            <FaWhatsapp clasName="w-full h-full p-2" />
           </a>
         </div>
+      </div>
+
+      <div className="hidden md:flex flex-col gap-3 absolute top-1/2 -translate-x-1/2 right-3">
+        <span className="w-3 aspect-square bg-gray-300 rounded-full"></span>
+        <span className="w-3 aspect-square bg-gray-300 rounded-full"></span>
+        <span className="w-3 aspect-square bg-gray-300 rounded-full"></span>
+        <span className="w-3 aspect-square bg-gray-300 rounded-full"></span>
+        <span className="w-3 aspect-square bg-gray-300 rounded-full"></span>
+        <span className="w-3 aspect-square bg-gray-300 rounded-full"></span>
       </div>
     </div>
   );
