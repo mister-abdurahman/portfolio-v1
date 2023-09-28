@@ -55,7 +55,7 @@ export default function Hero() {
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="hidden md:block absolute top-[33.5rem] left-1/2 -translate-x-1/2 -translate-y-1/2 w-90 h-90 opacity-40"
+        className="hidden md:block absolute top-[27.5rem] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[23rem] h-[23rem] opacity-40"
       >
         <Image alt="" src={circle} />
       </motion.div>
@@ -69,23 +69,23 @@ export default function Hero() {
       <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
-        className="hidden md:flex justify-center items-center md:absolute md:top-[16rem] md:m-auto md:left-[68%] bg-white shadow-xl rounded-full w-[5.9rem] aspect-square"
+        className="hidden md:flex justify-center items-center md:absolute md:top-[12rem] md:m-auto md:left-[61%] bg-white shadow-xl rounded-full w-[5.9rem] aspect-square"
       >
         <Image src={typescript} alt="" className="w-full p-5" />
       </motion.div>
       <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
-        className="hidden md:flex justify-center items-center md:absolute md:top-[30rem] md:m-auto md:left-[75%] bg-white shadow-xl rounded-full w-[8.2rem] aspect-square"
+        className="hidden md:flex justify-center items-center md:absolute md:top-[22rem] md:m-auto md:left-[68%] bg-white shadow-xl rounded-full w-[8.2rem] aspect-square"
       >
         <Image src={react} alt="" className="w-full p-4" />
       </motion.div>
       <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
-        className="hidden md:flex justify-center items-center absolute md:top-[44rem] md:left-[68%] md:m-auto bg-white shadow-xl rounded-full w-[5.3rem] aspect-square"
+        className="hidden md:flex justify-center items-center absolute md:top-[34rem] md:left-[64%] md:m-auto bg-white shadow-xl rounded-full w-[5.3rem] aspect-square"
       >
-        <Image src={tailwind} alt="" className=" w-full p-4" />
+        <Image src={tailwind} alt="" className="w-full p-4" />
       </motion.div>
 
       <motion.div

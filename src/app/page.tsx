@@ -3,12 +3,14 @@
 import Image from "next/image";
 import { NavBar } from "./navbar";
 import Hero from "./hero";
+import Work from "./work";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <NavBar />
       <Hero />
+      <Work />
     </main>
   );
 }
