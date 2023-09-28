@@ -30,6 +30,9 @@ const config: Config = {
         primary: "#edf2f8",
         secondary: "#313bac",
       },
+      borderColor: {
+        nav_border: "1px solid rgba(255, 255, 255, 0.2)",
+      },
     },
   },
   plugins: [],

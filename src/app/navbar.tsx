@@ -12,7 +12,7 @@ export function NavBar() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="bg-gray-50 backdrop-blur-md z-10 fixed top-0 flex justify-between items-center px-16 py-4 min-w-full">
+    <nav className="bg-transparent_gray backdrop-blur-md border-nav_border z-10 fixed top-0 flex justify-between items-center px-16 py-4 min-w-full">
       <h1 className=" font-DMSans uppercase font-extrabold text-sm">
         Abdu<span className="text-secondary">rahman</span>
       </h1>
@@ -27,7 +27,7 @@ export function NavBar() {
         ) : (
           <motion.div
             whileInView={{ x: [300, 0] }}
-            className="fixed top-0 bottom-0 right-0 z-20 p-4 w-[70%] h-screen bg-navbar_bg_image"
+            className="fixed top-0 bottom-0 right-0 z-20 p-4 w-[70%] h-screen bg-white bg-navbar_bg_image"
             // style={{ backgroundImage: `url('${navBgImg.src}')` }}
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
