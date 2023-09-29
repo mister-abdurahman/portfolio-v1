@@ -4,6 +4,7 @@ import Image from "next/image";
 import { NavBar } from "./navbar";
 import Hero from "./hero";
 import Work from "./work";
+import Portfolio from "./portfolio";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <Work />
+      <Portfolio />
     </main>
   );
 }

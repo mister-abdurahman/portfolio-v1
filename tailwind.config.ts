@@ -24,6 +24,7 @@ const config: Config = {
         brown: "#46364a",
         white: "#ffffff",
         transparent_gray: "rgba(255, 255, 255, 0.25)",
+        transparent_black: "rgba(0, 0, 0, 0.4)",
         lightGray: "#e4e4e4",
       },
       textColor: {
