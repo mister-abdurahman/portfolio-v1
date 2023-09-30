@@ -4,6 +4,74 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .react {
+    background: rgba(180, 239, 237, 0.35);
+    color: rgb(27, 116, 194);
+    border: 1px solid rgb(27, 116, 194);
+  }
+  .node {
+    background: rgba(141, 246, 177, 0.35);
+    color: green;
+    border: 1px solid green;
+  }
+  .css {
+    background: rgba(198, 198, 243, 0.35);
+    color: rgb(27, 45, 145);
+    border: 1px solid rgb(27, 45, 145);
+  }
+  .html {
+    background: rgba(241, 199, 164, 0.35);
+    color: rgb(190, 111, 7);
+    border: 1px solid rgb(190, 111, 7);
+  }
+  .tailwind {
+    background: rgba(175, 240, 233, 0.35);
+    color: rgb(18, 116, 96);
+    border: 1px solid rgb(18, 116, 96);
+  }
+  .javascript {
+    background: rgba(247, 240, 166, 0.35);
+    color: rgb(230, 250, 11);
+    border: 1px solid rgb(230, 250, 11);
+  }
+  .typescript {
+    background: rgba(157, 188, 244, 0.35);
+    color: rgb(39, 29, 233);
+    border: 1px solid rgb(39, 29, 233);
+  }
+  .mongodb {
+    background: rgba(161, 239, 165, 0.35);
+    color: rgb(29, 175, 36);
+    border: 1px solid rgb(29, 175, 36);
+  }
+  .sass {
+    background: rgba(244, 150, 203, 0.35);
+    color: rgb(242, 20, 186);
+    border: 1px solid rgb(242, 20, 186);
+  }
+  .next {
+    background: rgba(29, 33, 39, 0.35);
+    color: rgb(28, 28, 37);
+    border: 1px solid rgb(28, 28, 37);
+  }
+  .redux {
+    background: rgba(230, 156, 247, 0.35);
+    color: rgb(185, 24, 239);
+    border: 1px solid rgb(185, 24, 239);
+  }
+  .no_border {
+    border: none;
+  }
+  .experience_grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .c {
+    color: rgba(49, 59, 172, 0.152);
+  }
+}
+
 /* template */
 /* :root {
   --foreground-rgb: 0, 0, 0;

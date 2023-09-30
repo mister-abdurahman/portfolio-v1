@@ -5,6 +5,8 @@ import { NavBar } from "./navbar";
 import Hero from "./hero";
 import Work from "./work";
 import Portfolio from "./portfolio";
+import Skills from "./skills";
+import AboutMe from "./aboutme";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Hero />
       <Work />
       <Portfolio />
+      <AboutMe />
+      <Skills />
     </main>
   );
 }

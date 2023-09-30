@@ -20,6 +20,9 @@ const config: Config = {
       backgroundColor: {
         primary: "#edf2f9",
         secondary: "#313bac",
+        secondary_light: "#1e2a82",
+        secondary_transparent: "rgba(49, 59, 172, 0.152)",
+
         black: "#030303",
         brown: "#46364a",
         white: "#ffffff",

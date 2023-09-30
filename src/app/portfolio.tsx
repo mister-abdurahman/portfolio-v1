@@ -1,51 +1,83 @@
 import React, { useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa6";
 import { AiFillEye } from "react-icons/ai";
+import { Button } from "@mui/material";
 import imageholder1 from "../../public/about01.png";
 import imageholder2 from "../../public/about02.png";
 import imageholder3 from "../../public/about03.png";
+import ProjectDialog from "./ProjectDialog";
 
 const card = [
   {
     image: imageholder1,
     category: "React App",
-    title: "project_title",
+    title: "far away",
     readme: "lorem ipsum...",
+    tools: ["react", "html", "css", "tailwind"],
+    github_link: "https://github.com/mister-abdurahman",
   },
   {
     image: imageholder2,
     category: "Node App",
-    title: "project_title",
+    title: "node farm",
     readme: "lorem ipsum...",
+    tools: ["node", "html", "css"],
+    github_link: "https://github.com/mister-abdurahman",
   },
   {
     image: imageholder3,
     category: "Web App",
-    title: "project_title",
+    title: "forkify",
     readme: "lorem ipsum...",
+    tools: ["tailwind", "react", "css", "html"],
+    github_link: "https://github.com/mister-abdurahman",
   },
   {
     image: imageholder1,
     category: "React App",
-    title: "project_title",
+    title: "quizz app",
     readme: "lorem ipsum...",
+    tools: ["tailwind", "react", "css", "html"],
+    github_link: "https://github.com/mister-abdurahman",
   },
   {
     image: imageholder3,
     category: "Web App",
-    title: "project_title",
+    title: "nexter",
     readme: "lorem ipsum...",
+    tools: ["tailwind", "react", "css", "html"],
+    github_link: "https://github.com/mister-abdurahman",
   },
 ];
+
+export interface cardType {
+  image: StaticImageData;
+  category: string;
+  title: string;
+  readme: string;
+  tools: string[];
+}
 
 const category = ["All", "React App", "Web App", "Node App", "React+Node"];
 
 export default function Portfolio() {
   const [active, setActive] = useState("All");
+  const [openModal, setOpenModal] = useState(false);
+  const [selectedProj, setSelectedProj] = useState<null | cardType>(null);
+
+  function handleOpenModal(selectedProj: cardType) {
+    setOpenModal(true);
+    setSelectedProj(selectedProj);
+  }
 
   return (
-    <div className="bg-primary py-20">
+    <motion.div
+      whileInView={{ opacity: [0, 1] }}
+      transition={{ duration: 1, delayChildren: 5 }}
+      className="bg-primary py-20"
+    >
       <h1 className="text-4xl font-extrabold text-center capitalize">
         My creative <span className="text-secondary">portfolio</span> section
       </h1>
@@ -77,14 +109,14 @@ export default function Portfolio() {
             />
             <div className="flex opacity-0 gap-6 group-hover:opacity-100 z-10 transition-opacity duration-500">
               <div className="bg-transparent_black rounded-full -mt-40 w-14 aspect-square h-fit">
-                <a href="">
+                <a href={el.github_link} target="_blank">
                   <FaGithub className="w-full h-full p-3 fill-white" />
                 </a>
               </div>
-              <div className="bg-transparent_black rounded-full -mt-40 w-14 aspect-square h-fit">
-                <a href="">
+              <div className="bg-transparent_black flex justify-center rounded-full -mt-40 w-14 aspect-square h-fit">
+                <Button className="p-0" onClick={() => handleOpenModal(el)}>
                   <AiFillEye className="w-full h-full p-3 fill-white" />
-                </a>
+                </Button>
               </div>
             </div>
             <p className=" -mt-8 bg-white rounded-md p-2 z-10">{el.category}</p>
@@ -92,7 +124,12 @@ export default function Portfolio() {
             <p className="mb-4">{el.readme}</p>
           </div>
         ))}
+        <ProjectDialog
+          openModal={openModal}
+          setOpenModal={setOpenModal}
+          selectedProj={selectedProj}
+        />
       </div>
-    </div>
+    </motion.div>
   );
 }
