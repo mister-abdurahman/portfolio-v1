@@ -10,41 +10,49 @@ const cards = [
   {
     image: front_end,
     title: "Frontend Developer",
-    text: "I develope the frontend of web apps",
+    text: "I create engaging websites and applications using HTML, CSS, React, Tailwind and JavaScript, turning design concepts into seamless user experiences.",
   },
   {
     image: web_design,
     title: "Web Developer",
-    text: "I develope web apps",
+    text: "As a web developer, I build dynamic, scalable websites and web applications, employing a range of web technologies to deliver exceptional online solutions.",
   },
   {
     image: react,
     title: "React Developer",
-    text: "I develope react apps",
+    text: "As a React developer, I specialize in building dynamic, high-performance web applications, harnessing the power of React to craft engaging user interfaces.",
   },
   {
     image: node,
     title: "Node Developer",
-    text: "I develope node apis",
+    text: "As a Node.js developer, I leverage the server-side power of Node.js to create efficient, scalable, and data-driven web applications and APIs.",
   },
 ];
 
 function Work() {
   return (
-    <div className="mx-auto w-[80%] text-center bg-white py-20">
+    <div className="text-center bg-white dark:bg-thick_black dark:text-white py-20">
       <h1 className="capitalize font-extrabold text-4xl text-center">
-        I know that a<span className="text-secondary"> good developer</span>{" "}
-        <br /> means <span className="text-secondary"> good business.</span>{" "}
+        I know that a
+        <span className="text-secondary dark:text-purple-300">
+          {" "}
+          good developer
+        </span>{" "}
+        <br /> means{" "}
+        <span className="text-secondary dark:text-purple-300">
+          {" "}
+          Good business.
+        </span>{" "}
       </h1>
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 1, delayChildren: 5 }}
-        className="flex mt-16 justify-around flex-wrap"
+        className="flex mt-16 justify-around flex-wrap mx-auto w-[80%]"
       >
         {cards.map((el, i) => (
           <div
             key={i}
-            className="card flex flex-col gap-2 items-center hover:scale-110 transition duration-500 ease-in-out"
+            className="card mb-3 flex flex-col gap-2 items-center hover:scale-110 transition duration-500 ease-in-out"
           >
             <Image
               src={el.image}

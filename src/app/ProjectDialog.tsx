@@ -53,23 +53,23 @@ export default function ProjectDialog({
               >
                 {selectedProj?.title}
               </Typography>
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap">
                 {selectedProj?.tools.map((el, i) => (
                   <Toolbtn key={i} name={el} />
                 ))}
               </div>
             </div>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+              {selectedProj?.readme}
             </Typography>
             <Box className="flex gap-6 pt-8">
-              <a href="">
+              <a href={selectedProj?.live_demo} target="_blank">
                 <Button className="bg-secondary font-semibold uppercase shadow-lg text-primary hover:bg-secondary_light transition-colors duration-500">
                   Live Demo{" "}
                   <BsFillArrowUpRightSquareFill className="ml-2 w-5" />
                 </Button>
               </a>
-              <a href="">
+              <a href={selectedProj?.github_link} target="_blank">
                 <Button className="bg-white font-semibold uppercase text-secondary shadow-lg hover:bg-gray-50 transition-colors duration-500">
                   Github Repo <BsFillArrowUpRightSquareFill className="ml-2" />
                 </Button>

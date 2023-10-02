@@ -10,6 +10,7 @@ import { SiRedux } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
+import { BsFiletypeJs } from "react-icons/bs";
 
 export function setLogo(logoName: string) {
   switch (logoName) {
@@ -35,6 +36,8 @@ export function setLogo(logoName: string) {
       return <SiNextdotjs className="w-full h-full" />;
     case "mongodb":
       return <BiLogoMongodb className="w-full h-full" />;
+    case "ejs":
+      return <BsFiletypeJs className="w-full h-full" />;
     default:
       return "";
   }

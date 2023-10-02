@@ -23,7 +23,8 @@ const config: Config = {
         secondary_light: "#1e2a82",
         secondary_transparent: "rgba(49, 59, 172, 0.152)",
 
-        black: "#030303",
+        black: "rgb(44, 42, 42)",
+        thick_black: "#000",
         brown: "#46364a",
         white: "#ffffff",
         transparent_gray: "rgba(255, 255, 255, 0.25)",
@@ -36,6 +37,12 @@ const config: Config = {
       },
       borderColor: {
         nav_border: "1px solid rgba(255, 255, 255, 0.2)",
+      },
+      ringColor: {
+        secondary: "#313bac",
+      },
+      fill: {
+        primary: "#edf2f9",
       },
     },
   },

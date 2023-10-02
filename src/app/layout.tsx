@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter, DM_Sans } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+const dM_Sans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Abdurahman Portfolio",
@@ -16,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={dM_Sans.className}>{children}</body>
     </html>
   );
 }

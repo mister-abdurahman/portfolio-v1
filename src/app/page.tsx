@@ -1,43 +1,42 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import { NavBar } from "./navbar";
 import Hero from "./hero";
 import Work from "./work";
 import Portfolio from "./portfolio";
 import Skills from "./skills";
 import AboutMe from "./aboutme";
+import Contact from "./contact";
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
-    <main className="min-h-screen">
-      <NavBar />
+    <main className={`${darkMode ? "dark" : ""} min-h-screen`}>
+      <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Hero />
       <Work />
       <Portfolio />
       <AboutMe />
       <Skills />
+      <Contact />
     </main>
   );
 }
 
-// function NavBar() {
-//   return (
-//     <nav className="bg-transparent_gray backdrop-blur-md z-10 fixed flex justify-between items-center px-16 py-4 min-w-full">
-//       <h1 className=" font-DMSans uppercase font-extrabold text-sm">
-//         Abdu<span className="text-secondary">rahman</span>
-//       </h1>
-//       <div className="">
-//         <div className="bg-secondary p-2 rounded-full md:hidden">
-//           <GiHamburgerMenu className="fill-white" />
-//         </div>
-//         <ul className="hidden md:flex gap-6">
-//           {["Contact Me", "Portfolio", "About Me", "Skills & Experience"].map(el => <li className="text-sm"><a href="#">{el}</a></li>)}
-//         </ul>
-//       </div>
-//     </nav>
-//   );
-// }
+// form enabling✔
+// project filtering✔
+// add links✔
+// dark mode✔
+// skill logos color adjustment✔
+// add real data for projects✔
+// add prof image ✔
+// add video
+// **right side dot navigation enabling
 
-// add framer motion
-// build each section mobile first then desktop consecutively
+// test form submission✔
+// adjust and attach correct resume link
+// activate form after deploying website
+
+// 115800
