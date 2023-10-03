@@ -2,6 +2,7 @@ import React from "react";
 import { BiDownload } from "react-icons/bi";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { LiaCertificateSolid } from "react-icons/lia";
+import VideoPlayer from "./videoplayer";
 
 export default function AboutMe() {
   return (
@@ -14,8 +15,8 @@ export default function AboutMe() {
         🙋‍♂️👨‍💻
       </h1>
       <div className="flex xl:flex-row flex-col gap-8 mx-auto pt-8 justify-center w-[85%]">
-        <div className="flex-1 xl:order-first order-last bg-white min-w-40 aspect-video rounded-md shadow-lg">
-          video
+        <div className="flex-1 relative xl:order-first order-last bg-white min-w-40 aspect-video rounded-md shadow-lg">
+          <VideoPlayer />
         </div>
         <div className="flex-1 flex justify-center gap-6 flex-wrap max-w-[27.5rem] mx-auto">
           <div className="bg-white dark:bg-thick_black  rounded-md dark:text-white shadow-xl flex flex-col items-center h-fit py-4 w-52">

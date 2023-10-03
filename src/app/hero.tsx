@@ -1,6 +1,7 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import circle from "../../public/circle.svg";
@@ -22,6 +23,7 @@ const scaleVariants = {
 };
 
 export default function Hero() {
+  const [activePage, setActivePage] = useState(0);
   return (
     <div className="bg-primary dark:bg-gray-700 md:h-screen relative" id="Hero">
       <div className="pt-6 md:absolute md:mt-20">
@@ -43,6 +45,11 @@ export default function Hero() {
         className="mx-auto text-center max-w-[28rem] max-h-[28rem] pt-8 relative md:hidden"
       >
         <Image src={circle} alt="" className="w-full" />
+        <Image
+          src={profile}
+          alt=""
+          className="absolute top-0 w-[90%] left-1/2 -translate-x-1/2 z-10"
+        />
         <Image
           src={smallCircle}
           alt=""
@@ -148,12 +155,29 @@ export default function Hero() {
       </div>
 
       <div className="hidden md:flex flex-col gap-3 fixed top-1/2 -translate-x-1/2 right-0">
-        <span className="w-3 aspect-square bg-gray-300 rounded-full"></span>
-        <span className="w-3 aspect-square bg-gray-300 rounded-full"></span>
-        <span className="w-3 aspect-square bg-gray-300 rounded-full"></span>
-        <span className="w-3 aspect-square bg-gray-300 rounded-full"></span>
-        <span className="w-3 aspect-square bg-gray-300 rounded-full"></span>
-        <span className="w-3 aspect-square bg-gray-300 rounded-full"></span>
+        {["Hero", "Portfolio", "AboutMe", "Skills&Experience", "ContactMe"].map(
+          (el, i) => (
+            <Link
+              // href={`#${el}`}
+              to={el}
+              key={i}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={800}
+              className="hover:cursor-pointer w-3 h-3 relative"
+            >
+              <span
+                onClick={() => setActivePage(i)}
+                className={`${
+                  activePage === i
+                    ? "bg-secondary dark:bg-purple-300"
+                    : "bg-gray-300"
+                } w-full h-full absolute aspect-square rounded-full`}
+              ></span>
+            </Link>
+          )
+        )}
       </div>
     </div>
   );

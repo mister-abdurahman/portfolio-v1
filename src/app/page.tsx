@@ -32,8 +32,8 @@ export default function Home() {
 // skill logos color adjustment✔
 // add real data for projects✔
 // add prof image ✔
-// add video
-// **right side dot navigation enabling
+// add video ✔
+// **right side dot navigation enabling✔
 
 // test form submission✔
 // adjust and attach correct resume link
