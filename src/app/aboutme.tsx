@@ -49,7 +49,7 @@ export default function AboutMe() {
           </div>
 
           <a
-            href={`https://drive.google.com/file/d/1IXV1IMKnoWTS_BG97TgCWZxGqGDUI6fj/view?usp=sharing`}
+            href={`https://drive.google.com/file/d/1OSo1UxsqxXGUwcgNhBO40Pl62PGe5b5_/view?usp=sharing`}
             target="_blank"
             className="flex active:translate-y-2 hover:-translate-y-1 hover:shadow-xl transition-all duration-500 p-2 xl:p-0 xl:text-base text-sm items-center gap-4 justify-center bg-secondary dark:bg-purple-300 dark:text-black grow xl:max-w-[27.5rem] max-w-[13rem] rounded-md text-primary uppercase font-semibold"
           >
