@@ -50,6 +50,16 @@ export const projects = [
     live_demo: "https://worldwise-delta.vercel.app",
   },
   {
+    image: sociopedia,
+    category: "React+Node",
+    title: "Sociopedia",
+    readme:
+      "A sociomedia app mimicking your regular modern social media app 😍",
+    tools: ["tailwind", "react", "redux", "node", "css", "typescript", "html"],
+    github_link: "https://github.com/mister-abdurahman/sociopedia-frontend",
+    live_demo: "https://sociopedia-frontend-ochre.vercel.app/",
+  },
+  {
     image: forkify,
     category: "Web App",
     title: "forkify",

@@ -70,7 +70,7 @@ export default function Hero() {
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="hidden md:block absolute top-[25.5rem] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30rem] h-[30rem]"
+        className="hidden md:block absolute top-[20.5rem] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[26.5rem] h-[26.5rem]"
       >
         <Image src={profile} alt="" className="w-full z-10 absolute" />
       </motion.div>
@@ -169,11 +169,10 @@ export default function Hero() {
             >
               <span
                 onClick={() => setActivePage(i)}
-                className={`${
-                  activePage === i
-                    ? "bg-secondary dark:bg-purple-300"
-                    : "bg-gray-300"
-                } w-full h-full absolute aspect-square rounded-full`}
+                className={`${activePage === i
+                  ? "bg-secondary dark:bg-purple-300"
+                  : "bg-gray-300"
+                  } w-full h-full absolute aspect-square rounded-full`}
               ></span>
             </Link>
           )
