@@ -107,7 +107,7 @@ export default function Hero() {
       <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
-        className="md:hidden mx-auto w-fit mt-8 flex gap-10"
+        className="md:hidden mx-auto w-fit mt-8 flex gap-0"
       >
         <div className="flex justify-center h-fit mt-12 items-center bg-white shadow-xl rounded-full w-[5.9rem] aspect-square">
           <Image src={typescript} alt="" className="w-full p-5" />
@@ -169,10 +169,11 @@ export default function Hero() {
             >
               <span
                 onClick={() => setActivePage(i)}
-                className={`${activePage === i
-                  ? "bg-secondary dark:bg-purple-300"
-                  : "bg-gray-300"
-                  } w-full h-full absolute aspect-square rounded-full`}
+                className={`${
+                  activePage === i
+                    ? "bg-secondary dark:bg-purple-300"
+                    : "bg-gray-300"
+                } w-full h-full absolute aspect-square rounded-full`}
               ></span>
             </Link>
           )

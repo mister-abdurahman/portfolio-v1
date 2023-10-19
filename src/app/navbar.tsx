@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import navBgImg from "../../public/bgWhite.png";
 import { BsSunFill } from "react-icons/bs";
+import { MdDarkMode } from "react-icons/md";
 
 export function NavBar({
   darkMode,
@@ -26,7 +27,7 @@ export function NavBar({
   return (
     <nav
       className={`
-        bg-transparent_gray dark:bg-transparent_black backdrop-blur-md border-nav_border z-10 fixed top-0 flex justify-between items-center px-16 py-4 min-w-full
+        bg-transparent_gray dark:bg-transparent_black backdrop-blur-md border-nav_border z-20 fixed top-0 flex justify-between items-center px-16 py-4 min-w-full
       `}
     >
       <h1 className=" font-DMSans uppercase font-extrabold text-sm dark:text-white">
@@ -53,7 +54,7 @@ export function NavBar({
         ) : (
           <motion.div
             whileInView={{ x: [300, 0] }}
-            className="fixed top-0 bottom-0 right-0 z-20 p-4 w-[70%] h-screen bg-white dark:bg-black bg-navbar_bg_image"
+            className="fixed top-0 bottom-0 right-0 p-4 w-[70%] h-screen bg-white dark:bg-black bg-navbar_bg_image"
             // style={{ backgroundImage: `url('${navBgImg.src}')` }}
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
@@ -118,10 +119,17 @@ export function NavBar({
         )}
       </ul>
       <div>
-        <BsSunFill
-          onClick={() => setDarkMode((prev) => !prev)}
-          className="w-8 h-8 dark:fill-primary hover:cursor-pointer"
-        />
+        {darkMode ? (
+          <BsSunFill
+            onClick={() => setDarkMode((prev) => !prev)}
+            className="w-8 h-8 dark:fill-primary hover:cursor-pointer"
+          />
+        ) : (
+          <MdDarkMode
+            onClick={() => setDarkMode((prev) => !prev)}
+            className="w-8 h-8 dark:fill-primary hover:cursor-pointer"
+          />
+        )}
       </div>
     </nav>
   );

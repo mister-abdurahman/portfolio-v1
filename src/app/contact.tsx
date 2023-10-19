@@ -112,6 +112,12 @@ export default function Contact() {
       >
         <Alert onClose={() => setOpenSnackBar(false)}>{formResMsg}</Alert>
       </Snackbar>
+
+      <footer className="relative">
+        <p className="absolute capitalize bottom-0 right-3 text-gray-600">
+          Copyright © 2023 <br /> abduRahman Aramide
+        </p>
+      </footer>
     </div>
   );
 }
