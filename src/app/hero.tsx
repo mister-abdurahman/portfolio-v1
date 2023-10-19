@@ -10,6 +10,8 @@ import typescript from "../../public/typescript.png";
 import react from "../../public/react.png";
 import tailwind from "../../public/tailwind.svg";
 import profile from "../../public/profile1-removebg.png";
+import NavDots from "./NavDots";
+import SocialLinks from "./SocialLinks";
 
 const scaleVariants = {
   whileInView: {
@@ -120,7 +122,7 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      <div className="hidden md:flex flex-col gap-2 absolute bottom-4 left-4">
+      {/* <div className="hidden md:flex flex-col gap-2 absolute bottom-4 left-4">
         <div className="bg-white dark:bg-thick_black group dark:hover:bg-secondary hover:bg-secondary transition-colors duration-500 flex justify-center items-center rounded-full w-10 aspect-square">
           <a
             href="https://www.linkedin.com/in/ramadan-aramide-855289218/"
@@ -152,9 +154,10 @@ export default function Hero() {
             <FaWhatsapp clasName="w-full h-full p-2" />
           </a>
         </div>
-      </div>
+      </div> */}
+      <SocialLinks />
 
-      <div className="hidden md:flex flex-col gap-3 fixed top-1/2 -translate-x-1/2 right-0">
+      {/* <div className="hidden md:flex flex-col gap-3 fixed top-1/2 -translate-x-1/2 right-0">
         {["Hero", "Portfolio", "AboutMe", "Skills&Experience", "ContactMe"].map(
           (el, i) => (
             <Link
@@ -178,7 +181,10 @@ export default function Hero() {
             </Link>
           )
         )}
-      </div>
+      </div> */}
+      <NavDots setActivePage={setActivePage} dot={0} />
     </div>
   );
 }
+
+// 02:02:47 HOC video part
