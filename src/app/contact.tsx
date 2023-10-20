@@ -2,8 +2,9 @@ import { Alert, Snackbar } from "@mui/material";
 import React, { useState } from "react";
 import { MdMarkEmailRead } from "react-icons/md";
 import { MdContacts } from "react-icons/md";
+import AppWrap from "./AppWrap";
 
-export default function Contact() {
+function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -115,9 +116,13 @@ export default function Contact() {
 
       <footer className="relative text-sm">
         <p className="absolute text-right capitalize bottom-0 right-3 text-gray-600">
-          © 2023 abduRahman Aramide<br />ALL RIGHTS RESERVED
+          © 2023 abduRahman Aramide
+          <br />
+          ALL RIGHTS RESERVED
         </p>
       </footer>
     </div>
   );
 }
+
+export default AppWrap(Contact, "ContactMe");

@@ -1,15 +1,12 @@
 import React from "react";
 import { BiDownload } from "react-icons/bi";
-import { FaCloudDownloadAlt } from "react-icons/fa";
 import { LiaCertificateSolid } from "react-icons/lia";
 import VideoPlayer from "./videoplayer";
+import AppWrap from "./AppWrap";
 
-export default function AboutMe() {
+function AboutMe() {
   return (
-    <div
-      className="py-8 bg-secondary_transparent dark:bg-slate-800"
-      id="AboutMe"
-    >
+    <div className="py-8 bg-secondary_transparent dark:bg-slate-800">
       <h1 className="text-center dark:text-white text-4xl font-extrabold">
         Meet <span className="text-secondary dark:text-purple-300">Me </span>{" "}
         🙋‍♂️👨‍💻
@@ -63,3 +60,5 @@ export default function AboutMe() {
     </div>
   );
 }
+
+export default AppWrap(AboutMe, "AboutMe");

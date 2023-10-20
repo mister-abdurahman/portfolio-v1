@@ -1,5 +1,6 @@
 import React from "react";
 import { setLogo } from "./toolbtn";
+import AppWrap from "./AppWrap";
 
 const skills = [
   "react",
@@ -15,7 +16,7 @@ const skills = [
   "next",
 ];
 
-export default function Skills() {
+function Skills() {
   return (
     <div
       className="py-8 dark:bg-thick_black dark:text-white"
@@ -90,3 +91,5 @@ export default function Skills() {
     </div>
   );
 }
+
+export default AppWrap(Skills, "Skills&Experience");

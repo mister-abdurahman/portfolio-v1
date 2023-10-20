@@ -1,17 +1,13 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
-import { FaLinkedin, FaGithub } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa";
 import circle from "../../public/circle.svg";
 import smallCircle from "../../public/smallCircle.svg";
 import typescript from "../../public/typescript.png";
 import react from "../../public/react.png";
 import tailwind from "../../public/tailwind.svg";
 import profile from "../../public/profile1-removebg.png";
-import NavDots from "./NavDots";
-import SocialLinks from "./SocialLinks";
+import AppWrap from "./AppWrap";
 
 const scaleVariants = {
   whileInView: {
@@ -24,10 +20,9 @@ const scaleVariants = {
   },
 };
 
-export default function Hero() {
-  const [activePage, setActivePage] = useState(0);
+function Hero() {
   return (
-    <div className="bg-primary dark:bg-gray-700 md:h-screen relative" id="Hero">
+    <div className="bg-primary dark:bg-gray-700 md:h-screen relative">
       <div className="pt-6 md:absolute md:mt-20">
         <div className="bg-white dark:bg-black dark:text-white flex items-center gap-4 rounded-xl w-fit px-5 py-3 md:px-9 md:py-5 ml-20 md:ml-30 mt-16 md:mt-auto shadow-lg">
           <h1 className="text-3xl">👋</h1>
@@ -50,7 +45,7 @@ export default function Hero() {
         <Image
           src={profile}
           alt=""
-          className="absolute top-0 w-[90%] left-1/2 -translate-x-1/2 z-10"
+          className="absolute top-0 w-[90%] left-1/2 -translate-x-1/2"
         />
         <Image
           src={smallCircle}
@@ -74,7 +69,7 @@ export default function Hero() {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="hidden md:block absolute top-[20.5rem] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[26.5rem] h-[26.5rem]"
       >
-        <Image src={profile} alt="" className="w-full z-10 absolute" />
+        <Image src={profile} alt="" className="w-full absolute" />
       </motion.div>
 
       <div className="hidden md:block absolute top-[35rem] left-16 w-16 h-16 opacity-60">
@@ -121,70 +116,10 @@ export default function Hero() {
           <Image src={tailwind} alt="" className=" w-full p-4" />
         </div>
       </motion.div>
-
-      {/* <div className="hidden md:flex flex-col gap-2 absolute bottom-4 left-4">
-        <div className="bg-white dark:bg-thick_black group dark:hover:bg-secondary hover:bg-secondary transition-colors duration-500 flex justify-center items-center rounded-full w-10 aspect-square">
-          <a
-            href="https://www.linkedin.com/in/ramadan-aramide-855289218/"
-            target="_blank"
-            className="text-gray-500 dark:text-white group-hover:text-white transition-colors duration-500"
-          >
-            <FaLinkedin className=" w-full h-full p-2" />
-          </a>{" "}
-        </div>
-
-        <div className="bg-white dark:bg-thick_black group dark:hover:bg-secondary group hover:bg-secondary transition-colors duration-500 flex justify-center items-center rounded-full w-10 aspect-square">
-          <a
-            href="https://github.com/mister-abdurahman"
-            target="_blank"
-            className="text-gray-500 dark:text-white group-hover:text-white transition-colors duration-500"
-          >
-            {" "}
-            <FaGithub clasName="w-full h-full p-2" />
-          </a>
-        </div>
-
-        <div className="bg-white dark:bg-thick_black group dark:hover:bg-secondary group hover:bg-secondary transition-colors duration-500 flex justify-center items-center rounded-full w-10 aspect-square">
-          <a
-            href="https://wa.link/cy8shs"
-            target="_blank"
-            className="text-gray-500 dark:text-white group-hover:text-white transition-colors duration-500"
-          >
-            {" "}
-            <FaWhatsapp clasName="w-full h-full p-2" />
-          </a>
-        </div>
-      </div> */}
-      <SocialLinks />
-
-      {/* <div className="hidden md:flex flex-col gap-3 fixed top-1/2 -translate-x-1/2 right-0">
-        {["Hero", "Portfolio", "AboutMe", "Skills&Experience", "ContactMe"].map(
-          (el, i) => (
-            <Link
-              // href={`#${el}`}
-              to={el}
-              key={i}
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={800}
-              className="hover:cursor-pointer w-3 h-3 relative"
-            >
-              <span
-                onClick={() => setActivePage(i)}
-                className={`${
-                  activePage === i
-                    ? "bg-secondary dark:bg-purple-300"
-                    : "bg-gray-300"
-                } w-full h-full absolute aspect-square rounded-full`}
-              ></span>
-            </Link>
-          )
-        )}
-      </div> */}
-      <NavDots setActivePage={setActivePage} dot={0} />
     </div>
   );
 }
+
+export default AppWrap(Hero, "Hero");
 
 // 02:02:47 HOC video part

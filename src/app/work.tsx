@@ -5,6 +5,7 @@ import front_end from "../../public/about01.png";
 import web_design from "../../public/about02.png";
 import react from "../../public/about03.png";
 import node from "../../public/about04.png";
+import AppWrap from "./AppWrap";
 
 const cards = [
   {
@@ -70,4 +71,4 @@ function Work() {
   );
 }
 
-export default Work;
+export default AppWrap(Work, "Hero");

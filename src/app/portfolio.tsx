@@ -9,8 +9,8 @@ import imageholder2 from "../../public/about02.png";
 import imageholder3 from "../../public/about03.png";
 import ProjectDialog from "./ProjectDialog";
 
-// ["All", "React App", "Web App", "Node App", "React+Node"]
 import { projects } from "../../portfolio";
+import AppWrap from "./AppWrap";
 
 export interface cardType {
   image: StaticImageData;
@@ -24,7 +24,7 @@ export interface cardType {
 
 const category = ["All", "React App", "Web App", "Node App", "React+Node"];
 
-export default function Portfolio() {
+function Portfolio() {
   const [active, setActive] = useState("All");
   const [openModal, setOpenModal] = useState(false);
   const [selectedProj, setSelectedProj] = useState<null | cardType>(null);
@@ -49,7 +49,6 @@ export default function Portfolio() {
     <motion.div
       whileInView={{ opacity: [0, 1] }}
       transition={{ duration: 1, delayChildren: 5 }}
-      id="Portfolio"
       className="bg-primary dark:bg-gray-700 dark:text-white py-20"
     >
       <h1 className="text-4xl font-extrabold text-center capitalize">
@@ -117,3 +116,5 @@ export default function Portfolio() {
     </motion.div>
   );
 }
+
+export default AppWrap(Portfolio, "Portfolio");
