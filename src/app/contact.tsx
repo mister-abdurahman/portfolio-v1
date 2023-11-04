@@ -42,7 +42,7 @@ function Contact() {
   return (
     <div className="py-8 dark:bg-black " id="ContactMe">
       <div className="gradient dark:hidden h-10">&nbsp;</div>
-      <h1 className="text-4xl dark:text-white text-center capitalize font-extrabold mt-20">
+      <h1 className="text-4xl dark:text-white text-center capitalize font-extrabold mt-20 px-3">
         Take a Coffee & Chat with me
       </h1>
       <div className="my-12 mx-auto mt-16 flex md:flex-row flex-col justify-center items-center gap-9">
@@ -115,7 +115,7 @@ function Contact() {
       </Snackbar>
 
       <footer className="relative text-sm">
-        <p className="absolute text-right capitalize bottom-0 right-3 text-gray-600">
+        <p className="sm:absolute text-center sm:text-right capitalize sm:bottom-0 sm:right-3 text-gray-600">
           © 2023 abduRahman Aramide
           <br />
           ALL RIGHTS RESERVED

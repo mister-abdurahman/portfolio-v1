@@ -53,7 +53,7 @@ export function NavBar({
           </div>
         ) : (
           <motion.div
-            whileInView={{ x: [300, 0] }}
+            whileInView={{ x: [100, 0] }}
             className="fixed top-0 bottom-0 right-0 p-4 w-[70%] h-screen bg-white dark:bg-black bg-navbar_bg_image"
             // style={{ backgroundImage: `url('${navBgImg.src}')` }}
             transition={{ duration: 0.85, ease: "easeOut" }}

@@ -4,9 +4,6 @@ import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa6";
 import { AiFillEye } from "react-icons/ai";
 import { Button } from "@mui/material";
-import imageholder1 from "../../public/about01.png";
-import imageholder2 from "../../public/about02.png";
-import imageholder3 from "../../public/about03.png";
 import ProjectDialog from "./ProjectDialog";
 
 import { projects } from "../../portfolio";
@@ -49,14 +46,14 @@ function Portfolio() {
     <motion.div
       whileInView={{ opacity: [0, 1] }}
       transition={{ duration: 1, delayChildren: 5 }}
-      className="bg-primary dark:bg-gray-700 dark:text-white py-20"
+      className="bg-primary dark:bg-gray-700 dark:text-white py-20 px-2"
     >
       <h1 className="text-4xl font-extrabold text-center capitalize">
         My creative{" "}
         <span className="text-secondary dark:text-purple-400">Portfolio</span>{" "}
         Section
       </h1>
-      <div className="flex gap-4 justify-center my-9">
+      <div className="flex gap-4 justify-center my-9 px-8 flex-wrap">
         {category.map((el, i) => (
           <button
             key={i}

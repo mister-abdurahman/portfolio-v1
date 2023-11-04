@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      height: {
+        screen: "100dvh",
+      },
       fontFamily: {
         DMSans: "DM Sans",
       },
