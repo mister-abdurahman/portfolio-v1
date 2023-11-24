@@ -27,8 +27,8 @@ export default function ProjectDialog({
       className="flex justify-center items-center"
     >
       <Fade in={openModal}>
-        <Box className="w-[85vw] sm:w-[70vw] bg-primary rounded-md">
-          <Box className="bg-primary relative w-full h-[15rem] rounded-tr-md rounded-tl-md overflow-hidden">
+        <Box className="w-[85vw] sm:w-[70vw] my-10 bg-primary rounded-md">
+          <Box className="bg-primary relative w-full h-36 sm:h-[15rem] rounded-tr-md rounded-tl-md overflow-hidden">
             <Button
               onClick={handleClose}
               variant="contained"
