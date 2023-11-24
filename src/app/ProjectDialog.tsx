@@ -27,12 +27,18 @@ export default function ProjectDialog({
       className="flex justify-center items-center"
     >
       <Fade in={openModal}>
-        <Box className="w-[70vw] bg-primary rounded-md">
+        <Box className="w-[85vw] sm:w-[70vw] bg-primary rounded-md">
           <Box className="bg-primary relative w-full h-[15rem] rounded-tr-md rounded-tl-md overflow-hidden">
             <Button
               onClick={handleClose}
               variant="contained"
-              className="absolute right-5 top-5 bg-secondary text-primary font-semibold"
+              sx={{
+                backgroundColor: "#313bac",
+                position: "absolute",
+                top: "1.3rem",
+                right: "1.3rem",
+                fontWeight: "700",
+              }}
             >
               Close
             </Button>
@@ -62,17 +68,17 @@ export default function ProjectDialog({
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
               {selectedProj?.readme}
             </Typography>
-            <Box className="flex gap-6 pt-8">
+            <Box className="flex flex-col sm:flex-row gap-3 sm:gap-6 pt-8">
               <a href={selectedProj?.live_demo} target="_blank">
-                <Button className="bg-secondary font-semibold uppercase shadow-lg text-primary hover:bg-secondary_light transition-colors duration-500">
+                <button className="bg-secondary px-6 py-3 text-sm sm:text-base rounded-md flex items-center font-semibold uppercase shadow-lg text-primary hover:bg-secondary_light transition-colors duration-500">
                   Live Demo{" "}
                   <BsFillArrowUpRightSquareFill className="ml-2 w-5" />
-                </Button>
+                </button>
               </a>
               <a href={selectedProj?.github_link} target="_blank">
-                <Button className="bg-white font-semibold uppercase text-secondary shadow-lg hover:bg-gray-50 transition-colors duration-500">
+                <button className="bg-white px-6 py-3 text-sm sm:text-base rounded-md flex items-center font-semibold uppercase text-secondary shadow-lg hover:bg-gray-50 transition-colors duration-500">
                   Github Repo <BsFillArrowUpRightSquareFill className="ml-2" />
-                </Button>
+                </button>
               </a>
             </Box>
           </Box>

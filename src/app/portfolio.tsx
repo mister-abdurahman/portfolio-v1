@@ -92,9 +92,12 @@ function Portfolio() {
                 </a>
               </div>
               <div className="bg-transparent_black flex justify-center rounded-full -mt-32 w-14 aspect-square h-fit">
-                <Button className="p-0" onClick={() => handleOpenModal(el)}>
-                  <AiFillEye className="w-full h-full p-3 fill-white" />
-                </Button>
+                {/* <Button className="p-0" onClick={() => handleOpenModal(el)}> */}
+                <AiFillEye
+                  onClick={() => handleOpenModal(el)}
+                  className="w-full h-full p-3 fill-white"
+                />
+                {/* </Button> */}
               </div>
             </div>
             <p className=" -mt-8 bg-white dark:bg-gray-700 rounded-md p-2 z-10">
