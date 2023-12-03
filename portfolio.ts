@@ -20,15 +20,25 @@ import quizzical from "./public/quizzical.webp";
 import react_quizz from "./public/react-quizz.webp";
 
 export const projects = [
+  // {
+  //   image: recipify,
+  //   category: "React App",
+  //   title: "Recipify",
+  //   readme:
+  //     "A react app where you can search for different recipes and check their cooking time and ingredients",
+  //   tools: ["react", "html", "css", "tailwind", "typescript"],
+  //   github_link: "https://github.com/mister-abdurahman/recipify",
+  //   live_demo: "https://recipify-delta.vercel.app",
+  // },
   {
-    image: recipify,
-    category: "React App",
-    title: "Recipify",
+    image: sociopedia,
+    category: "React+Node",
+    title: "Sociopedia",
     readme:
-      "A react app where you can search for different recipes and check their cooking time and ingredients",
-    tools: ["react", "html", "css", "tailwind", "typescript"],
-    github_link: "https://github.com/mister-abdurahman/recipify",
-    live_demo: "https://recipify-delta.vercel.app",
+      "A sociomedia app mimicking your regular modern social media app 😍",
+    tools: ["tailwind", "react", "redux", "node", "css", "typescript", "html"],
+    github_link: "https://github.com/mister-abdurahman/sociopedia-frontend",
+    live_demo: "https://sociopedia-frontend-ochre.vercel.app/",
   },
   {
     image: worldwise,
@@ -49,37 +59,26 @@ export const projects = [
     github_link: "https://github.com/mister-abdurahman/worldwise",
     live_demo: "https://worldwise-delta.vercel.app",
   },
-  {
-    image: sociopedia,
-    category: "React+Node",
-    title: "Sociopedia",
-    readme:
-      "A sociomedia app mimicking your regular modern social media app 😍",
-    tools: ["tailwind", "react", "redux", "node", "css", "typescript", "html"],
-    github_link: "https://github.com/mister-abdurahman/sociopedia-frontend",
-    live_demo: "https://sociopedia-frontend-ochre.vercel.app/",
-  },
-  {
-    image: forkify,
-    category: "Web App",
-    title: "forkify",
-    readme:
-      "A vanillaJS app to search for varities of recipes, create your own recipes and bookmark your favourites. 😍",
-    tools: ["tailwind", "react", "css", "html"],
-    github_link: "https://github.com/mister-abdurahman/forkify",
-    live_demo:
-      "https://forkify-abdurahman.netlify.app/#64edca193d03bb001490e1fb",
-  },
+  // {
+  //   image: forkify,
+  //   category: "Web App",
+  //   title: "forkify",
+  //   readme:
+  //     "A vanillaJS app to search for varities of recipes, create your own recipes and bookmark your favourites. 😍",
+  //   tools: ["tailwind", "react", "css", "html"],
+  //   github_link: "https://github.com/mister-abdurahman/forkify",
+  //   live_demo:
+  //     "https://forkify-abdurahman.netlify.app/#64edca193d03bb001490e1fb",
+  // },
   {
     image: quizzical,
     category: "React App",
     title: "Quizzical",
     readme:
-      "A quizz app that asks questions across all fields of stufy to test your IQ and knowledge span",
+      "A quizz app that asks questions across all fields of study to test your IQ and knowledge span",
     tools: ["tailwind", "react", "css", "html"],
     github_link: "https://github.com/mister-abdurahman",
-    live_demo:
-      "https://forkify-abdurahman.netlify.app/#64edca193d03bb001490e1fb",
+    live_demo: "https://silver-gelato-1220a5.netlify.app/",
   },
   {
     image: usepopcorn,
