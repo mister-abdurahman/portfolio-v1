@@ -77,8 +77,8 @@ export const projects = [
     readme:
       "A quizz app that asks questions across all fields of study to test your IQ and knowledge span",
     tools: ["tailwind", "react", "css", "html"],
-    github_link: "https://github.com/mister-abdurahman",
-    live_demo: "https://silver-gelato-1220a5.netlify.app/",
+    github_link: "https://github.com/mister-abdurahman/react-quizzicalTS",
+    live_demo: "https://react-quizzical-ts.vercel.app/",
   },
   {
     image: usepopcorn,
