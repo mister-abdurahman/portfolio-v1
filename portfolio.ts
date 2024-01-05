@@ -18,6 +18,7 @@ import hangman from "./public/hangman.webp";
 import node_farm from "./public/node-farm.jpg";
 import quizzical from "./public/quizzical.webp";
 import react_quizz from "./public/react-quizz.webp";
+import visual from "./public/visual.png";
 
 export const projects = [
   // {
@@ -39,6 +40,24 @@ export const projects = [
     tools: ["tailwind", "react", "redux", "node", "css", "typescript", "html"],
     github_link: "https://github.com/mister-abdurahman/sociopedia-frontend",
     live_demo: "https://sociopedia-frontend-ochre.vercel.app/",
+  },
+  {
+    image: visual,
+    category: "React+Node",
+    title: "Visual Dashboard",
+    readme:
+      "A dashboard that displays different visual charts of data fetched from a MongoDB database",
+    tools: [
+      "tailwind",
+      "react",
+      "node",
+      "css",
+      "typescript",
+      "html",
+      "mongodb",
+    ],
+    github_link: "https://github.com/mister-abdurahman/blackcoffer_frontend",
+    live_demo: "https://blackcoffer-frontend-psi.vercel.app/",
   },
   {
     image: worldwise,
