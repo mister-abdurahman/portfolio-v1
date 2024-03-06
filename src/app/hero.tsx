@@ -28,13 +28,13 @@ function Hero() {
           <h1 className="text-3xl">👋</h1>
           <div>
             <p className="text-sm">Hello, I am</p>
-            <h1 className="text-2xl font-extrabold">Abdurahman</h1>
+            <h1 className="text-2xl font-extrabold">Ramadan</h1>
           </div>
         </div>
       </div>
       <div className="bg-white dark:bg-black dark:text-white md:absolute md:top-48 flex flex-col text-right rounded-xl w-fit px-5 py-3 md:px-6 md:py-3 mt-4 ml-20 md:ml-[9.7rem] shadow-lg">
-        <p>Front-End Developer</p>
-        <p>Web Developer</p>
+        <p>Software Developer</p>
+        <p>MERN Developer</p>
       </div>
       <motion.div
         whileInView={{ opacity: [0, 1] }}
