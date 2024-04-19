@@ -5,7 +5,7 @@ import circle from "../../public/circle.svg";
 import smallCircle from "../../public/smallCircle.svg";
 import typescript from "../../public/typescript.png";
 import react from "../../public/react.png";
-import tailwind from "../../public/tailwind.svg";
+import node from "../../public/node.png";
 import profile from "../../public/profile1-removebg.png";
 import AppWrap from "./AppWrap";
 
@@ -98,7 +98,7 @@ function Hero() {
         whileInView={scaleVariants.whileInView}
         className="hidden md:flex justify-center items-center absolute md:top-[34rem] md:left-[64%] md:m-auto bg-white shadow-xl rounded-full w-[5.3rem] aspect-square"
       >
-        <Image src={tailwind} alt="" className="w-full p-4" />
+        <Image src={node} alt="" className="w-full p-4" />
       </motion.div>
 
       <motion.div
@@ -113,7 +113,7 @@ function Hero() {
           <Image src={react} alt="" className="w-full p-4" />
         </div>
         <div className="flex justify-center h-fit mt-12 items-center ml-8 bg-white shadow-xl rounded-full w-[5.3rem] aspect-square">
-          <Image src={tailwind} alt="" className=" w-full p-4" />
+          <Image src={node} alt="" className=" w-full p-4" />
         </div>
       </motion.div>
     </div>
