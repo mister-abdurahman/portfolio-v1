@@ -19,6 +19,7 @@ import node_farm from "./public/node-farm.jpg";
 import quizzical from "./public/quizzical.webp";
 import react_quizz from "./public/react-quizz.webp";
 import visual from "./public/visual.png";
+import hotel from "./public/hotel.jpg";
 
 export const projects = [
   // {
@@ -40,6 +41,24 @@ export const projects = [
     tools: ["tailwind", "react", "redux", "node", "css", "typescript", "html"],
     github_link: "https://github.com/mister-abdurahman/sociopedia-frontend",
     live_demo: "https://sociopedia-frontend-ochre.vercel.app/",
+  },
+  {
+    image: hotel,
+    category: "React+Node",
+    title: "Wild Oasis (HAMS)",
+    readme:
+      "An hotel admin management system for managing the bookings, cabins and customers operations in the organization",
+    tools: [
+      "styled-component",
+      "react",
+      "redux",
+      "supabase",
+      "css",
+      "typescript",
+      "html",
+    ],
+    github_link: "https://github.com/mister-abdurahman/wild-oasis",
+    live_demo: "https://wildoasis-01.netlify.app/",
   },
   {
     image: visual,

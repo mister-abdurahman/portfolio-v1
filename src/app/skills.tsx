@@ -14,6 +14,7 @@ const skills = [
   "html",
   "sass",
   "next",
+  "express",
 ];
 
 function Skills() {

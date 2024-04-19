@@ -55,6 +55,11 @@
     color: rgb(28, 28, 37);
     border: 1px solid rgb(28, 28, 37);
   }
+  .express {
+    background: rgba(108, 110, 113, 0.35);
+    color: rgb(28, 28, 37);
+    border: 1px solid rgb(7, 7, 9);
+  }
   .redux {
     background: rgba(230, 156, 247, 0.35);
     color: rgb(185, 24, 239);
@@ -64,6 +69,17 @@
     background: rgba(210, 204, 157, 0.35);
     color: rgb(239, 174, 24);
     border: 1px solid rgb(239, 174, 24);
+  }
+  .styled-component {
+    background: rgba(230, 156, 247, 0.35);
+    color: rgb(185, 24, 239);
+    border: 1px solid rgb(185, 24, 239);
+    /* font-size: 0.6rem; */
+  }
+  .supabase {
+    background: rgba(207, 241, 188, 0.35);
+    color: rgb(31, 167, 19);
+    border: 1px solid rgb(12, 110, 12);
   }
   .no_border {
     border: none;
