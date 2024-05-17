@@ -20,6 +20,7 @@ import quizzical from "./public/quizzical.webp";
 import react_quizz from "./public/react-quizz.webp";
 import visual from "./public/visual.png";
 import hotel from "./public/hotel.jpg";
+import healthbuddy from "./public/healthBuddy.png";
 
 export const projects = [
   // {
@@ -38,7 +39,16 @@ export const projects = [
     title: "Sociopedia",
     readme:
       "A sociomedia app mimicking your regular modern social media app 😍",
-    tools: ["tailwind", "react", "redux", "node", "css", "typescript", "html"],
+    tools: [
+      "tailwind",
+      "react",
+      "redux",
+      "node",
+      "css",
+      "typescript",
+      "html",
+      "mongodb",
+    ],
     github_link: "https://github.com/mister-abdurahman/sociopedia-frontend",
     live_demo: "https://sociopedia-frontend-ochre.vercel.app/",
   },
@@ -59,6 +69,25 @@ export const projects = [
     ],
     github_link: "https://github.com/mister-abdurahman/wild-oasis",
     live_demo: "https://wildoasis-01.netlify.app/",
+  },
+  {
+    image: healthbuddy,
+    category: "React+Node",
+    title: "Health Buddy",
+    readme:
+      "An Health App for Patients to book appointments with doctors and see health related matters",
+    tools: [
+      "tailwind",
+      "react",
+      "redux",
+      "node",
+      "css",
+      "typescript",
+      "html",
+      "mongodb",
+    ],
+    github_link: "https://github.com/mister-abdurahman/healthBuddy_FE",
+    live_demo: "https://health-buddy-fe.vercel.app/",
   },
   {
     image: visual,
